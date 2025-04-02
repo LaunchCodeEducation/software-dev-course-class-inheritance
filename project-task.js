@@ -1,46 +1,69 @@
 /*
-Objective:
-This activity will help students practice applying inheritance by creating a class hierarchy for a
-library management system. Students will define a base class and extend it to create specialized
-child classes that inherit and share behaviors and data.
+===========================================
+📚 Inheritance Practice: Library System
+===========================================
 
+🎯 Objective:
+Practice applying inheritance by creating a class hierarchy
+for a library management system.
 
+Students will:
+- Define a base class
+- Extend it to create child classes
+- Share and specialize behaviors through inheritance
 
-Scenario:
-You are tasked with designing a library management system. The library lends out various types of items
-such as books, DVDs, and magazines. While all items share some common properties (e.g., title, id, isAvailable),
-each type has unique properties and behaviors.
-For example:
-  Books have an author and a genre.
-  DVDs have a director and duration.
-  Magazines have an issueNumber and publisher.
+---
+📘 Scenario:
+You're designing a library system that lends items like:
 
+📖 Books → author, genre  
+📀 DVDs → director, duration  
+📰 Magazines → issueNumber, publisher  
 
+All items share:
+- title
+- id
+- isAvailable
+- checkOut() and returnItem() methods
 
-Instructions:
-Step 1: Create a Base Class
-  Define a class LibraryItem to represent shared properties (title, id, isAvailable) and methods (e.g., checkOut() and returnItem()).
-
-Step 2: Extend the Base Class
-  Create child classes Book, DVD, and Magazine that inherit from LibraryItem.
-  Add unique properties and methods for each child class:
-  Book: Add properties like author and genre.
-  DVD: Add properties like director and duration.
-  Magazine: Add properties like issueNumber and publisher.
-
-Step 3: Instantiate Objects
-  Create instances of each class and test the shared and unique methods.
-
-Step 4: Test the Inheritance
-  Use inherited methods like checkOut() and returnItem() to manage the availability of items.
-  Test accessing and displaying unique properties of each child class.
+---
+🧭 Instructions:
+1️⃣ Create a base class `LibraryItem`  
+2️⃣ Extend it with `Book`, `DVD`, and `Magazine`  
+3️⃣ Instantiate and test objects  
+4️⃣ Verify inherited and unique behaviors
 */
 
 
+// ============================================
+// 🧱 Step 1: Define the LibraryItem base class
+// ============================================
+// - Properties: title, id, isAvailable (default to true)
+// - Methods: checkOut() → sets isAvailable to false
+//            returnItem() → sets isAvailable to true
 
-// Starter Code
-// Step 1: Define the LibraryItem base class
 
-// Step 2: Create child classes for Book, DVD, and Magazine
 
-// Step 3: Instantiate objects and test the functionality
+// ============================================
+// 📚 Step 2: Create child classes for Book, DVD, Magazine
+// ============================================
+// - Book: Add author and genre properties
+// - DVD: Add director and duration properties
+// - Magazine: Add issueNumber and publisher properties
+
+
+
+// ============================================
+// 🧪 Step 3: Instantiate objects and test methods
+// ============================================
+// - Create one instance of each child class
+// - Log each instance to check its properties
+// - Call checkOut() and returnItem() on different instances
+
+
+
+// ============================================
+// ✅ Step 4: Test inheritance and unique properties
+// ============================================
+// - Use console.log() to display unique properties (e.g., author, director, issueNumber)
+// - Confirm shared methods (checkOut and returnItem) work across all classes
